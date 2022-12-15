@@ -15,16 +15,24 @@ import DotText from './components/DotText'
 
 const HolidayGreetings = () => {
     return (
-        <div style={{
-            position: 'relative',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }}>
-            <DotText text="Merry Christmas and Happy New Year" play={true} length={60} />
+        <div style={styles.container}>
+            <DotText 
+            text="Merry Christmas and Happy New Year" 
+            play={true} 
+            length={60}
+            />
         </div>
     )
+}
+
+const styles = {
+    container: {
+        position: 'relative',
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
 }
 
 export default HolidayGreetings
